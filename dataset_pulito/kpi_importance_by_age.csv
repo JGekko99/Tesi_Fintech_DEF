@@ -1,0 +1,4 @@
+﻿age_band_norm,imp_no_fees (mean),imp_brand (mean),imp_onboarding (mean),imp_branch (mean),imp_app (mean),imp_innovation (mean),imp_cashback (mean),imp_no_fees (sd),imp_brand (sd),imp_onboarding (sd),imp_branch (sd),imp_app (sd),imp_innovation (sd),imp_cashback (sd)
+18-21,5.0,3.72,3.98,3.06,3.13,3.03,3.94,0.05,1.32,0.72,1.56,0.75,1.29,0.85
+22-25,4.6,3.66,4.1,3.08,3.24,3.25,3.64,0.73,1.25,0.76,1.57,0.78,1.27,1.01
+26-30,4.34,4.24,3.69,3.63,3.1,2.49,3.36,0.82,0.93,0.66,1.2,0.79,1.27,1.08

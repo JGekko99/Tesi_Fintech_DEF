@@ -9,7 +9,7 @@ from pathlib import Path
 
 # === Percorsi (aggiorna la cartella)
 PATH_IN  = "dataset.csv"   # se stai eseguendo nella stessa cartella
-OUT_DIR  = Path(r"C:\Users\Jacopo\Tesi_Fintech\dataset_pulito")
+OUT_DIR  = Path(r"C:\Users\Jacopo\Tesi_Fintech_DEF\dataset_pulito")
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 PATH_OUT = OUT_DIR / "_dataset_semicolon.csv"
 
@@ -86,7 +86,7 @@ print("Saved parsed:", PATH_OUT)
 import re, numpy as np, pandas as pd
 from pathlib import Path
 
-OUT_DIR = Path(r"C:\Users\Jacopo\Tesi_Fintech\dataset_pulito")
+OUT_DIR = Path(r"C:\Users\Jacopo\Tesi_Fintech_DEF\dataset_pulito")
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 PATH_IN = OUT_DIR / "_dataset_semicolon.csv"   # <— usa il file riparato
@@ -217,7 +217,7 @@ print("\nSalvato:", OUT_PARSED)
 import re, numpy as np, pandas as pd
 from pathlib import Path
 
-BASE = Path(r"C:\Users\Jacopo\Tesi_Fintech\dataset_pulito")
+BASE = Path(r"C:\Users\Jacopo\Tesi_Fintech_DEF\dataset_pulito")
 LAB  = BASE / "_dataset_parsed_labeled.csv"    # risultato Step 1
 SEMICSV = BASE / "_dataset_semicolon.csv"      # file con header originali (ci serve per cercare testi)
 OUT  = BASE / "_dataset_clean.csv"
@@ -350,7 +350,7 @@ print("\nSalvato CLEAN (FIX):", OUT)
 import re, numpy as np, pandas as pd
 from pathlib import Path
 
-BASE = Path(r"C:\Users\Jacopo\Tesi_Fintech\dataset_pulito")
+BASE = Path(r"C:\Users\Jacopo\Tesi_Fintech_DEF\dataset_pulito")
 LAB  = BASE / "_dataset_parsed_labeled.csv"
 SEMICSV = BASE / "_dataset_semicolon.csv"
 OUT  = BASE / "_dataset_clean.csv"
@@ -454,7 +454,7 @@ print("\nSalvato CLEAN (aggiornato):", OUT)
 import numpy as np, pandas as pd
 from pathlib import Path
 
-BASE = Path(r"C:\Users\Jacopo\Tesi_Fintech\dataset_pulito")
+BASE = Path(r"C:\Users\Jacopo\Tesi_Fintech_DEF\dataset_pulito")
 IN   = BASE / "_dataset_clean.csv"
 
 df = pd.read_csv(IN)
@@ -576,7 +576,7 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 import re
 
-BASE = Path(r"C:\Users\Jacopo\Tesi_Fintech\dataset_pulito")
+BASE = Path(r"C:\Users\Jacopo\Tesi_Fintech_DEF\dataset_pulito")
 IN   = BASE / "_dataset_clean.csv"
 df   = pd.read_csv(IN)
 print("Loaded:", IN, "shape:", df.shape)
@@ -732,7 +732,7 @@ import numpy as np, pandas as pd
 from pathlib import Path
 from scipy import stats
 
-BASE = Path(r"C:\Users\Jacopo\Tesi_Fintech\dataset_pulito")
+BASE = Path(r"C:\Users\Jacopo\Tesi_Fintech_DEF\dataset_pulito")
 IN   = BASE / "_dataset_clean_enriched.csv"
 df   = pd.read_csv(IN)
 print("Loaded enriched:", IN, "shape:", df.shape)
@@ -765,7 +765,7 @@ from pathlib import Path
 from scipy import stats
 import statsmodels.stats.multicomp as mc
 
-BASE = Path(r"C:\Users\Jacopo\Tesi_Fintech\dataset_pulito")
+BASE = Path(r"C:\Users\Jacopo\Tesi_Fintech_DEF\dataset_pulito")
 IN   = BASE / "_dataset_clean_enriched.csv"
 df   = pd.read_csv(IN)
 
@@ -808,7 +808,7 @@ import numpy as np, pandas as pd
 import statsmodels.api as sm
 from pathlib import Path
 
-BASE = Path(r"C:\Users\Jacopo\Tesi_Fintech\dataset_pulito")
+BASE = Path(r"C:\Users\Jacopo\Tesi_Fintech_DEF\dataset_pulito")
 IN   = BASE / "_dataset_clean_enriched.csv"
 df   = pd.read_csv(IN)
 print("Loaded enriched:", IN, "shape:", df.shape)
@@ -879,7 +879,7 @@ import numpy as np, pandas as pd
 from pathlib import Path
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 
-BASE = Path(r"C:\Users\Jacopo\Tesi_Fintech\dataset_pulito")
+BASE = Path(r"C:\Users\Jacopo\Tesi_Fintech_DEF\dataset_pulito")
 IN   = BASE / "_dataset_clean_enriched.csv"
 OUT  = BASE / "mnlogit_vif_fix.csv"
 
@@ -945,7 +945,7 @@ from sklearn.ensemble import RandomForestClassifier, HistGradientBoostingClassif
 from sklearn.inspection import permutation_importance
 import matplotlib.pyplot as plt
 
-BASE = Path(r"C:\Users\Jacopo\Tesi_Fintech\dataset_pulito")
+BASE = Path(r"C:\Users\Jacopo\Tesi_Fintech_DEF\dataset_pulito")
 IN   = BASE / "_dataset_clean_enriched.csv"
 OUTD = BASE / "ml_outputs"; OUTD.mkdir(exist_ok=True, parents=True)
 
@@ -1111,7 +1111,7 @@ from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 import statsmodels.api as sm
 
-BASE = Path(r"C:\Users\Jacopo\Tesi_Fintech\dataset_pulito")
+BASE = Path(r"C:\Users\Jacopo\Tesi_Fintech_DEF\dataset_pulito")
 IN   = BASE / "_dataset_clean_enriched.csv"
 OUTD = BASE / "pca_outputs"; OUTD.mkdir(exist_ok=True, parents=True)
 
@@ -1178,7 +1178,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, accuracy_score, f1_score, confusion_matrix
 
-BASE = Path(r"C:\Users\Jacopo\Tesi_Fintech\dataset_pulito")
+BASE = Path(r"C:\Users\Jacopo\Tesi_Fintech_DEF\dataset_pulito")
 IN   = BASE / "_dataset_clean_enriched.csv"
 OUTD = BASE / "ml_outputs"; OUTD.mkdir(exist_ok=True, parents=True)
 
@@ -1276,7 +1276,7 @@ from sklearn.metrics import brier_score_loss
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 
-BASE = Path(r"C:\Users\Jacopo\Tesi_Fintech\dataset_pulito")
+BASE = Path(r"C:\Users\Jacopo\Tesi_Fintech_DEF\dataset_pulito")
 IN   = BASE / "_dataset_clean_enriched.csv"
 OUTD = BASE / "ml_outputs"; OUTD.mkdir(exist_ok=True, parents=True)
 
@@ -1323,7 +1323,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import HistGradientBoostingClassifier
 from sklearn.inspection import PartialDependenceDisplay
 
-BASE = Path(r"C:\Users\Jacopo\Tesi_Fintech\dataset_pulito")
+BASE = Path(r"C:\Users\Jacopo\Tesi_Fintech_DEF\dataset_pulito")
 IN   = BASE / "_dataset_clean_enriched.csv"
 OUTD = BASE / "ml_outputs"; OUTD.mkdir(exist_ok=True, parents=True)
 

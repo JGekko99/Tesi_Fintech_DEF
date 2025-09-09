@@ -1,0 +1,4 @@
+﻿age_band_norm,trad_trust (mean),trad_fees (mean),trad_innov (mean),trad_ux (mean),trad_service (mean),trad_trust (sd),trad_fees (sd),trad_innov (sd),trad_ux (sd),trad_service (sd)
+18-21,3.99,2.51,2.8,3.01,4.15,0.92,0.5,0.68,0.71,0.69
+22-25,4.0,2.5,2.76,2.89,4.11,0.92,0.5,0.64,0.68,0.71
+26-30,4.34,2.5,2.97,3.3,4.42,0.72,0.52,0.76,0.64,0.62

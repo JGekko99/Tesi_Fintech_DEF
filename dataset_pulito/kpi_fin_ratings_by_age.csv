@@ -1,0 +1,4 @@
+﻿age_band_norm,fin_trust (mean),fin_fees (mean),fin_ux (mean),fin_trust (sd),fin_fees (sd),fin_ux (sd)
+18-21,2.99,4.49,4.51,0.92,0.52,0.78
+22-25,3.0,4.54,4.58,0.93,0.52,0.74
+26-30,2.81,4.49,4.18,0.88,0.53,0.86
